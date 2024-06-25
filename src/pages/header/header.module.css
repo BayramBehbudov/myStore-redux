@@ -1,0 +1,53 @@
+.container {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+    background-color: antiquewhite;
+
+    nav {
+        display: flex;
+        gap: 50px;
+
+        li {
+            cursor: pointer;
+            transition: all 0.4s;
+        }
+
+        li:hover {
+            transform: scale(1.1);
+            color: red;
+        }
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 20px;
+    color: rgb(225, 77, 77);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+
+}
+
+.shopCardContainer {
+    position: relative;
+}
+
+.shopCardCount {
+    font-size: 14px;
+    position: absolute;
+    top: 13px;
+    right:-15px;
+    color: rgb(102, 0, 255);
+}

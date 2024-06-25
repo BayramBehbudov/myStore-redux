@@ -1,0 +1,85 @@
+.productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px 0;
+    gap: 30px;
+    background-color: #f7a50c;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    position: relative;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.card2 {
+    cursor: pointer;
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 0;
+    transition: all .2s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.cardButton {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.card:hover .cardButton {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+img {
+    width: 80%;
+    height: 50%;
+
+}
+
+.description {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.priceAndCount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.count {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+}
